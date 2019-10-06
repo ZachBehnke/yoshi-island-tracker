@@ -1,0 +1,18 @@
+.world{
+	text-shadow: 2px 2px black;
+	font-size: 20pt;
+	font-family: "SuperMario256";
+	color: white;
+	padding: 20px;
+}
+
+@font-face{
+	font-family: "SuperMario256";
+	src: url(SuperMario256.ttf);
+}
+
+.egg{
+	height: 91px;
+	width: 80px;
+	margin-top: 10px;
+}

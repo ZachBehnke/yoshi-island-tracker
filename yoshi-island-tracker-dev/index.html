@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SMW2: Yoshi's Island World Tracker</title>
+		<link rel="stylesheet" href="css/format.css">
+	</head>
+
+	<body>
+	<div>
+		<span class="world">W1</span>
+		<span class="world">W2</span>
+		<span class="world">W3</span>
+		<span class="world">W4</span>
+		<span class="world">W5</span>
+		<span class="world">W6</span>
+	</div>
+
+	<div>
+		<img id="w1egg" class="egg" style="background-color: red" src="images/blankEgg.png" alt="World 1 Yoshi Egg" onclick="changeColor('w1egg')">
+		<img id="w2egg" class="egg" style="background-color: red" src="images/blankEgg.png" alt="World 2 Yoshi Egg" onclick="changeColor('w2egg')">
+		<img id="w3egg" class="egg" style="background-color: red" src="images/blankEgg.png" alt="World 3 Yoshi Egg" onclick="changeColor('w3egg')">
+		<img id="w4egg" class="egg" style="background-color: red" src="images/blankEgg.png" alt="World 4 Yoshi Egg" onclick="changeColor('w4egg')">
+		<img id="w5egg" class="egg" style="background-color: red" src="images/blankEgg.png" alt="World 5 Yoshi Egg" onclick="changeColor('w5egg')">
+		<img id="w6egg" class="egg" style="background-color: red" src="images/blankEgg.png" alt="World 6 Yoshi Egg" onclick="changeColor('w6egg')">
+	</div>
+
+	</body>
+
+	<script type="text/javascript">
+	
+	function changeColor(eggId) 
+	{
+		var currentElement = document.getElementById(eggId);
+		var inlineStyle = currentElement.style.backgroundColor;
+
+		switch (inlineStyle)
+		{
+			case "red":
+				currentElement.style.backgroundColor = "yellow";
+				break;
+			case "yellow":
+				currentElement.style.backgroundColor = "green";
+				break;
+			case "green":
+				currentElement.style.backgroundColor = "red";
+				break;
+		}
+	}	
+	</script>
+</html>

@@ -3,7 +3,7 @@
 	font-size: 20pt;
 	font-family: "SuperMario256";
 	color: white;
-	padding: 20px;
+	padding: 16px;
 }
 
 @font-face{
@@ -15,4 +15,16 @@
 	height: 91px;
 	width: 80px;
 	margin-top: 10px;
+	display: inline-block;
+	z-index: 1;
+	position: inherit;
+}
+
+.bgEgg
+{
+	height:91px;
+	width: 80px;
+	display: inline-block;
+	margin-top: 10px;
+	border-radius: 90%;
 }

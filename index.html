@@ -1,0 +1,140 @@
+<<<<<<< Updated upstream:yoshi-island-tracker-dev/index.html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SMW2: Yoshi's Island World Tracker</title>
+		<link rel="stylesheet" href="css/format.css">
+	</head>
+
+	<body>
+	<div>
+		<span class="world">W1</span>
+		<span class="world">W2</span>
+		<span class="world">W3</span>
+		<span class="world">W4</span>
+		<span class="world">W5</span>
+		<span class="world">W6</span>
+	</div>
+
+	<div id="w1bg" style="background-color: red" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 1 Yoshi Egg" onclick="changeColor('w1bg')">
+	</div>
+
+	<div id="w2bg" style="background-color: red" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 2 Yoshi Egg" onclick="changeColor('w2bg')">
+	</div>
+
+	<div id="w3bg" style="background-color: red" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 3 Yoshi Egg" onclick="changeColor('w3bg')">
+	</div>
+
+	<div id="w4bg" style="background-color: red" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 4 Yoshi Egg" onclick="changeColor('w4bg')">
+	</div>
+
+	<div id="w5bg" style="background-color: red" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 5 Yoshi Egg" onclick="changeColor('w5bg')">
+	</div>
+
+	<div id="w6bg" style="background-color: red" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 6 Yoshi Egg" onclick="changeColor('w6bg')">
+	</div>
+
+
+	</body>
+
+	<script type="text/javascript">
+	
+	function changeColor(eggId) 
+	{
+		var currentElement = document.getElementById(eggId);
+		var inlineStyle = currentElement.style.backgroundColor;
+
+		switch (inlineStyle)
+		{
+			case "red":
+				currentElement.style.backgroundColor = "yellow";
+				break;
+			case "yellow":
+				currentElement.style.backgroundColor = "green";
+				break;
+			case "green":
+				currentElement.style.backgroundColor = "red";
+				break;
+		}
+	}	
+	</script>
+=======
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SMW2: Yoshi's Island World Tracker</title>
+		<link rel="stylesheet" href="css/format.css">
+	</head>
+
+	<body>
+	<div>
+		<span class="world">W1</span>
+		<span class="world">W2</span>
+		<span class="world">W3</span>
+		<span class="world">W4</span>
+		<span class="world">W5</span>
+		<span class="world">W6</span>
+		<span class="legend">Legend</span>
+	</div>
+
+	<div id="w1bg" style="background-color: #ff0000" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 1 Yoshi Egg" onclick="changeColor('w1bg')">
+	</div>
+
+	<div id="w2bg" style="background-color: #ff0000" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 2 Yoshi Egg" onclick="changeColor('w2bg')">
+	</div>
+
+	<div id="w3bg" style="background-color: #ff0000" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 3 Yoshi Egg" onclick="changeColor('w3bg')">
+	</div>
+
+	<div id="w4bg" style="background-color: #ff0000" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 4 Yoshi Egg" onclick="changeColor('w4bg')">
+	</div>
+
+	<div id="w5bg" style="background-color: #ff0000" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 5 Yoshi Egg" onclick="changeColor('w5bg')">
+	</div>
+
+	<div id="w6bg" style="background-color: #ff0000" class="bgEgg">
+		<img class="egg" src="images/blankEgg.png" alt="World 6 Yoshi Egg" onclick="changeColor('w6bg')">
+	</div>
+
+	<div class="legendColor">
+		<p class="legend"> <span class="color" style="background-color: #71bf44"></span> - 100% </p>
+		<p class="legend"> <span class="color" style="background-color: #f9c400"></span> - In-Progress</p>
+		<p class="legend"> <span class="color" style="background-color: #ff0000"></span> - Not Completed</p>
+	</div>
+
+	</body>
+
+	<script type="text/javascript">
+	
+	function changeColor(eggId) 
+	{
+		var currentElement = document.getElementById(eggId);
+		var inlineStyle = currentElement.style.backgroundColor;
+
+		switch (inlineStyle)
+		{
+			case "rgb(255, 0, 0)":
+				currentElement.style.backgroundColor = "#f9c400";
+				break;
+			case "rgb(249, 196, 0)":
+				currentElement.style.backgroundColor = "#71bf44";
+				break;
+			case "rgb(113, 191, 68)":
+				currentElement.style.backgroundColor = "#ff0000";
+				break;
+		}
+	}	
+	</script>
+>>>>>>> Stashed changes:index.html
+</html>
